@@ -16,6 +16,8 @@ const mongo_password = process.env.MONGODB_PASSWORD;
 
 const url = "mongodb+srv://"+mongo_user+":"+mongo_password+"@"+mongo_url+"/okksshopping?retryWrites=true&w=majority&appName=testiklusteri"
 
+app.use("/",express.static("public"));
+
 mongoose.connect(url).then(
 	() => console.log("Connected to MongoDB"),
 	(err) => console.log("Failed to connect to MongoDB. Reason",err)
