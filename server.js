@@ -23,6 +23,7 @@ mongoose.connect(url).then(
 	(err) => console.log("Failed to connect to MongoDB. Reason",err)
 )
 
+//MOI
 //HELPERS and MIDDLEWARES
 
 const time_to_live_diff = 3600000
